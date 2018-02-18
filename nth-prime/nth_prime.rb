@@ -4,16 +4,18 @@ class Prime
     number = 2
     counter = 1
 
-    while counter < n
+    while counter != n
       number += 1
-      counter += 1 if prime?(number)
+      counter += 1 if number.prime?
     end
 
     number
   end
+end
 
-  def self.prime?(n)
-    (2..Math.sqrt(n)).all? { |k| n % k != 0 }
+class Integer
+  def prime?
+    (2..Math.sqrt(self)).all? { |k| self % k != 0 }
   end
 end
 

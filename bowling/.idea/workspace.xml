@@ -20,7 +20,7 @@
     <SUITE FILE_PATH="coverage/bowling@test_points_scored_in_the_roll_after_a_spare_are_counted_twice__bowling.coverage" NAME="test_points_scored_in_the_roll_after_a_spare_are_counted_twice: bowling Coverage Results" MODIFIED="1518824874465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bowling" />
     <SUITE FILE_PATH="coverage/bowling@test_a_strike_with_the_one_roll_bonus_after_a_spare_in_the_last_frame_does_not_get_a_bonus__bowling.coverage" NAME="test_a_strike_with_the_one_roll_bonus_after_a_spare_in_the_last_frame_does_not_get_a_bonus: bowling Coverage Results" MODIFIED="1518826299234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bowling" />
     <SUITE FILE_PATH="coverage/bowling@test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated__bowling.coverage" NAME="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated: bowling Coverage Results" MODIFIED="1518827262179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bowling" />
-    <SUITE FILE_PATH="coverage/bowling@Run_test__BowlingTest___bowling.coverage" NAME="Run test 'BowlingTest': bowling Coverage Results" MODIFIED="1518827372125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bowling" />
+    <SUITE FILE_PATH="coverage/bowling@Run_test__BowlingTest___bowling.coverage" NAME="Run test 'BowlingTest': bowling Coverage Results" MODIFIED="1518952414679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bowling" />
     <SUITE FILE_PATH="coverage/bowling@test_cannot_roll_if_game_already_has_ten_frames__bowling.coverage" NAME="test_cannot_roll_if_game_already_has_ten_frames: bowling Coverage Results" MODIFIED="1518812442695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bowling" />
     <SUITE FILE_PATH="coverage/bowling@test_points_scored_in_the_two_rolls_after_a_strike_are_counted_twice_as_a_bonus__bowling.coverage" NAME="test_points_scored_in_the_two_rolls_after_a_strike_are_counted_twice_as_a_bonus: bowling Coverage Results" MODIFIED="1518824479031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bowling" />
     <SUITE FILE_PATH="coverage/bowling@test_consecutive_strikes_each_get_the_two_roll_bonus__bowling.coverage" NAME="test_consecutive_strikes_each_get_the_two_roll_bonus: bowling Coverage Results" MODIFIED="1518802004736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bowling" />
@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="33">
+              <first_editor relative-caret-position="264">
                 <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
                 <folding />
               </first_editor>
@@ -46,7 +46,7 @@
       <file leaf-file-name="bowling_test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bowling_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="2904">
               <caret line="88" column="18" lean-forward="true" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
               <folding />
             </state>
@@ -56,8 +56,8 @@
       <file leaf-file-name="bowling.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bowling.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+            <state relative-caret-position="2143">
+              <caret line="84" column="82" lean-forward="false" selection-start-line="84" selection-start-column="82" selection-end-line="84" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -82,6 +82,9 @@
       <find>points_sc</find>
       <find>fillbal</find>
       <find>a_strike_with</find>
+      <find>10</find>
+      <find>is_</find>
+      <find>@rolls[</find>
     </findStrings>
     <replaceStrings>
       <replace># skip</replace>
@@ -108,7 +111,7 @@
     <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -121,26 +124,12 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bowling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bowling" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../space-age" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clock" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -310,43 +299,44 @@
       <workItem from="1518728510262" duration="12113000" />
       <workItem from="1518801834570" duration="11523000" />
       <workItem from="1518820671327" duration="6958000" />
+      <workItem from="1518950980883" duration="1509000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.17 at 01h 27m 46s.xml">
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 08m 04s.xml">
       <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.17 at 01h 28m 32s.xml">
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 08m 16s.xml">
       <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.17 at 01h 28m 55s.xml">
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 09m 44s.xml">
       <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.17 at 01h 29m 13s.xml">
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 09m 50s.xml">
       <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.17 at 01h 29m 26s.xml">
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 09m 53s.xml">
       <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.17 at 01h 29m 32s.xml">
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 09m 54s.xml">
       <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated__bowling - 2018.02.17 at 01h 25m 19s.xml">
-      <configuration name="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated: bowling" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 10m 22s.xml">
+      <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated__bowling - 2018.02.17 at 01h 25m 28s.xml">
-      <configuration name="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated: bowling" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 11m 58s.xml">
+      <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated__bowling - 2018.02.17 at 01h 26m 47s.xml">
-      <configuration name="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated: bowling" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 12m 05s.xml">
+      <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated__bowling - 2018.02.17 at 01h 27m 42s.xml">
-      <configuration name="test_both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated: bowling" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'BowlingTest'__bowling - 2018.02.18 at 12h 13m 35s.xml">
+      <configuration name="Run test 'BowlingTest': bowling" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31375000" />
+    <option name="totallyTimeSpent" value="32884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -357,6 +347,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -368,7 +359,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -383,6 +373,33 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="264">
+            <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bowling_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="88" column="18" lean-forward="true" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bowling.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3300">
+          <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -451,7 +468,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="33">
+          <first_editor relative-caret-position="264">
             <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
             <folding />
           </first_editor>
@@ -461,7 +478,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bowling_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="2904">
           <caret line="88" column="18" lean-forward="true" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
           <folding />
         </state>
@@ -469,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bowling.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+        <state relative-caret-position="2143">
+          <caret line="84" column="82" lean-forward="false" selection-start-line="84" selection-start-column="82" selection-end-line="84" selection-end-column="82" />
           <folding />
         </state>
       </provider>

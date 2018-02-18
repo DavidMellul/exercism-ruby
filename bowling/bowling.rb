@@ -1,51 +1,56 @@
 class Game
-  class BowlingError < StandardError;
-  end
+  class BowlingError < StandardError; end
+
+  REGULAR_FRAME_NUMBER = 10
+  STRIKE_VALUE = 10
 
   def initialize
     @rolls = []
-    @frames = 0
+    @frame_counter = 0
   end
 
   def roll(pins)
-    if !pins.between?(0, 10)
-      raise BowlingError
-    elsif roll_at_last + pins > 10 && !roll_at_last_is_strike? && !roll_at_last_is_spare?
-      raise BowlingError
-    elsif @frames == 10.0 && !roll_at_last_is_strike? && !roll_at_last_is_spare?
-      raise BowlingError
+    if !pins.between?(0, STRIKE_VALUE)
+      raise BowlingError, "You can't roll more than #{STRIKE_VALUE} pins on a single throw"
+    elsif roll_at_last + pins > STRIKE_VALUE && !roll_at_last_is_strike? && !roll_at_last_is_spare?
+      raise BowlingError, "You can't roll more than #{STRIKE_VALUE} pins on a single current_frame"
+    elsif @frame_counter == REGULAR_FRAME_NUMBER && !roll_at_last_is_strike? && !roll_at_last_is_spare?
+      raise BowlingError, "You can't roll more than #{REGULAR_FRAME_NUMBER} frames without a fillball"
     end
 
-    @frames += pins == 10 ? 1.0 : 0.5
-
+    @frame_counter += pins == STRIKE_VALUE ? 1.0 : 0.5
     @rolls << pins
   end
 
-  def score(position = 0, result = 0, frame = 0.0)
-    raise BowlingError if @rolls.empty? || @rolls.size < 10 || ((roll_at_last_is_strike? || roll_at_last_is_spare?) && is_last_frame(frame))
+  def score(roll_index = 0, result = 0, current_frame = 0.0)
 
-    if position < @rolls.size
-      if is_strike?(position)
-        if is_fillball?(position)
-          result + 10 + roll_at(position + 1) + roll_at(position + 2)
-        elsif !comes_after_a_spare?(position, frame) && position+2 < @rolls.size
-          score(position + 1, result + 10 + roll_at(position + 1) + roll_at(position + 2), frame + 1)
-        elsif position+2 >= @rolls.size && !comes_after_a_spare?(position,frame)
-          raise BowlingError
+    if @rolls.empty? || @rolls.size < REGULAR_FRAME_NUMBER
+      raise BowlingError, "You can't score without rolling all the frames"
+    elsif (roll_at_last_is_strike? || roll_at_last_is_spare?) && last_frame?(current_frame)
+      raise BowlingError, "You can't score without using your fillball"
+    end
+
+    if roll_index < @rolls.size
+      if strike?(roll_index)
+        if fillball?(roll_index)
+          result + STRIKE_VALUE + roll_at(roll_index + 1) + roll_at(roll_index + 2)
+        elsif !comes_after_a_spare?(roll_index, current_frame) && roll_index + 2 < @rolls.size
+          score(roll_index + 1, result + STRIKE_VALUE + roll_at(roll_index + 1) + roll_at(roll_index + 2), current_frame + 1)
+        elsif roll_index + 2 >= @rolls.size && !comes_after_a_spare?(roll_index, current_frame)
+          raise BowlingError, ""
         else
           result
         end
-      elsif is_spare?(position, frame)
-        if followed_by_spare?(position,frame) || (position == @rolls.size-3)
-          score(position + 2, result + 10 + roll_at(position+2), frame + 1)
+      elsif spare?(roll_index, current_frame)
+        if followed_by_spare?(roll_index, current_frame) || (roll_index == @rolls.size - 3)
+          score(roll_index + 2, result + STRIKE_VALUE + roll_at(roll_index + 2), current_frame + 1)
         else
-          score(position + 2, result + 10 + roll_at(position+2)*2, frame + 1)
-
+          score(roll_index + 2, result + STRIKE_VALUE + roll_at(roll_index + 2) * 2, current_frame + 1)
         end
-      elsif comes_after_a_spare?(position,frame)
+      elsif comes_after_a_spare?(roll_index, current_frame)
         result
       else
-        score(position + 1, result + roll_at(position), frame + 0.5)
+        score(roll_index + 1, result + roll_at(roll_index), current_frame + 0.5)
       end
     else
       result
@@ -53,7 +58,7 @@ class Game
   end
 
   def roll_at(position)
-    position >= 0 ? (@rolls[position] || 0) : 0
+    @rolls[position] || 0
   end
 
   def roll_at_last
@@ -61,39 +66,35 @@ class Game
   end
 
   def roll_at_last_is_strike?
-    is_strike?(@rolls.size-1)
+    strike?(@rolls.size - 1)
   end
 
   def roll_at_last_is_spare?
-    is_spare?(@rolls.size-2,@frames)
+    spare?(@rolls.size - 2, @frame_counter)
   end
 
-  def is_fillball?(position)
-    is_strike?(position) && (position == @rolls.size - 3)
+  def fillball?(position)
+    strike?(position) && (position == @rolls.size - 3)
   end
 
-  def is_strike?(position)
-    @rolls[position] == 10
+  def strike?(position)
+    @rolls[position] == STRIKE_VALUE
   end
 
-  def is_last_roll?(position)
-    position == @rolls.size - 1
+  def spare?(position, frame)
+    (roll_at(position) + roll_at(position + 1)) == STRIKE_VALUE && (frame % 1).zero?
   end
 
-  def is_spare?(position, frame)
-    (roll_at(position) + roll_at(position + 1)) == 10 && frame % 1 == 0
+  def comes_after_a_spare?(position, frame)
+    spare?(position - 2, frame) && position > 1
   end
 
-  def comes_after_a_spare?(position,frame)
-    is_spare?(position-2,frame) && position > 1
+  def followed_by_spare?(position, frame)
+    spare?(position + 2, frame + 1)
   end
 
-  def followed_by_spare?(position,frame)
-    is_spare?(position+2,frame+1)
-  end
-
-  def is_last_frame(frame)
-    frame == @frames
+  def last_frame?(frame)
+    frame == @frame_counter
   end
 end
 

@@ -12,7 +12,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/nth_prime@test_first_prime__nth_prime.coverage" NAME="test_first_prime: nth-prime Coverage Results" MODIFIED="1518479515900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="nth-prime" />
     <SUITE FILE_PATH="coverage/nth_prime@test_sixth_prime__nth_prime.coverage" NAME="test_sixth_prime: nth-prime Coverage Results" MODIFIED="1518566492158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="nth-prime" />
-    <SUITE FILE_PATH="coverage/nth_prime@Run_test__NthPrimeTest___nth_prime.coverage" NAME="Run test 'NthPrimeTest': nth-prime Coverage Results" MODIFIED="1518566651030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="nth-prime" />
+    <SUITE FILE_PATH="coverage/nth_prime@Run_test__NthPrimeTest___nth_prime.coverage" NAME="Run test 'NthPrimeTest': nth-prime Coverage Results" MODIFIED="1518955704203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="nth-prime" />
     <SUITE FILE_PATH="coverage/nth_prime@prime.coverage" NAME="prime Coverage Results" MODIFIED="1518479349290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/Ruby24-x64/lib/ruby/2.4.0" MODULE_NAME="nth-prime" />
   </component>
   <component name="FileEditorManager">
@@ -20,8 +20,8 @@
       <file leaf-file-name="nth_prime_test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nth_prime_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="396">
+              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -30,8 +30,8 @@
       <file leaf-file-name="nth_prime.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nth_prime.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="472">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -97,7 +97,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,6 +108,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,43 +247,44 @@
       <workItem from="1518477896930" duration="2337000" />
       <workItem from="1518564147291" duration="2591000" />
       <workItem from="1518628702297" duration="140000" />
+      <workItem from="1518954715003" duration="1000000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.14 at 00h 57m 42s.xml">
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 02m 36s.xml">
       <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.14 at 01h 00m 49s.xml">
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 02m 48s.xml">
       <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.14 at 01h 02m 20s.xml">
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 03m 26s.xml">
       <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.14 at 01h 03m 04s.xml">
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 06m 21s.xml">
       <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.14 at 01h 03m 29s.xml">
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 06m 35s.xml">
       <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.14 at 01h 03m 49s.xml">
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 06m 48s.xml">
       <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.14 at 01h 04m 13s.xml">
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 06m 56s.xml">
       <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_sixth_prime__nth-prime - 2018.02.13 at 00h 58m 17s.xml">
-      <configuration name="test_sixth_prime: nth-prime" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 07m 08s.xml">
+      <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_sixth_prime__nth-prime - 2018.02.13 at 00h 59m 00s.xml">
-      <configuration name="test_sixth_prime: nth-prime" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 07m 16s.xml">
+      <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_sixth_prime__nth-prime - 2018.02.14 at 01h 01m 47s.xml">
-      <configuration name="test_sixth_prime: nth-prime" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'NthPrimeTest'__nth-prime - 2018.02.18 at 13h 08m 26s.xml">
+      <configuration name="Run test 'NthPrimeTest': nth-prime" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5068000" />
+    <option name="totallyTimeSpent" value="6068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -295,18 +296,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +321,33 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nth_prime_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="561">
+            <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nth_prime.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nth_prime_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
@@ -381,14 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nth_prime_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -400,10 +420,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nth_prime.rb">
+    <entry file="file://$PROJECT_DIR$/nth_prime_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nth_prime.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>
