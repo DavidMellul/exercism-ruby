@@ -1,29 +1,15 @@
 class Brackets
-  PAIRS = {
-      '{' => '}',
-      '[' => ']',
-      '(' => ')'
-  }.freeze
+  SYMBOLS = %w({ } [ ] ( )).freeze
+  PAIRS = %w({} [] ()).freeze
 
-  # I believe there might be a magical regex (which I was able to find for simple cases only, not evil nested ones)
   def self.paired?(text)
-    stack = []
+    clean = text.each_char.select(&SYMBOLS.method(:include?))
 
-    text
-        .each_char do |char|
-      case char
-        when /[{(\[]/
-          stack << char
-        when /[})\]]/
-          if char == PAIRS[stack[-1]]
-            stack.pop
-          else
-            return false # God forgive it
-          end
-      end
+    while PAIRS.any?(&clean.join.method(:include?))
+      PAIRS.each { |pair| clean = clean.join.gsub(pair.to_s, '').chars }
     end
 
-    stack.empty?
+    clean.empty?
   end
 end
 
